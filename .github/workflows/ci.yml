@@ -21,6 +21,6 @@
            NODE_AUTH_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
          run: |
            npm run deploy
-       - uses: actions/build-docker-image
+       - uses: actions/build-docker-image@v1
          with:
            input-variable: value
