@@ -1,0 +1,13 @@
+# action.yml
+name: build-docker-image
+description: 'build the docker image'
+inputs:
+  input-variable:
+    description: 'some input variable'
+    required: false
+    default: 'World'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.input-variable }}
