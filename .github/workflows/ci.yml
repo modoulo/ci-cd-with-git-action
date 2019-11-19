@@ -17,9 +17,11 @@
            npm run build --if-present
            npm test   
        - name: build docker images
-         run: |
-          docker build -t docker-images .
-          docker images
+         uses: dakario/docker-build-push-action@master
+         with:
+          username: username
+          password: password
+          image-tag: image-tag
          #uses: modoulo/ci-cd-with-git-action@master
          #with:
          #  input-variable: value
