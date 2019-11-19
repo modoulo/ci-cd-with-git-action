@@ -21,6 +21,6 @@
            NODE_AUTH_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
          run: |
            npm run deploy
-       - uses: action/ci-cd-with-git-action@v1
+       - uses: actions/ci-cd-with-git-action@v2
          with:
            input-variable: value
