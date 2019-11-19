@@ -16,6 +16,10 @@
            npm install
            npm run build --if-present
            npm test   
-       - uses: modoulo/ci-cd-with-git-action@v5
-         with:
-           input-variable: value
+       - name: build docker images
+         run: |
+          docker build -t docker-images .
+          docker images
+         #uses: modoulo/ci-cd-with-git-action@master
+         #with:
+         #  input-variable: value
