@@ -16,6 +16,6 @@
            npm install
            npm run build --if-present
            npm test   
-       - uses: modoulo/ci-cd-with-git-action@v4
+       - uses: modoulo/ci-cd-with-git-action@v5
          with:
            input-variable: value
