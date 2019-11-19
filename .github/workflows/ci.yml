@@ -19,9 +19,9 @@
        - name: build docker images
          uses: dakario/docker-build-push-action@master
          with:
-          name: image-name
-          username: username
-          password: password
+          name: modoulobolysow/image-name
+          username: ${{ secrets.docker_login}}
+          password: ${{ secrets.docker_password}}
          #uses: modoulo/ci-cd-with-git-action@master
          #with:
          #  input-variable: value
