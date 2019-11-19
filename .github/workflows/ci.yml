@@ -19,7 +19,8 @@
        - name: build docker images
          uses: dakario/docker-build-push-action@master
          with:
-          name: modoulobolysow/image-name
+          name: image-name
+          registry: modoulobolysow
           username: ${{ secrets.docker_login}}
           password: ${{ secrets.docker_password}}
          #uses: modoulo/ci-cd-with-git-action@master
